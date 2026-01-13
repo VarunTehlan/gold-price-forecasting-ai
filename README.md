@@ -76,87 +76,88 @@ gold-price-forecasting-ai/
 
 ---
 
-🔬 Methodology
-1. Data Collection
-Source: Yahoo Finance (GC=F - Gold Futures)
+## 🔬 Methodology
 
-Period: January 2020 - January 2026
+### 1. Data Collection
+- **Source:** Yahoo Finance (GC=F - Gold Futures)
+- **Period:** January 2020 - January 2026
+- **Records:** 1,516 trading days
+- **Features:** Open, High, Low, Close, Volume
 
-Records: 1,516 trading days
+### 2. Data Preprocessing
+- Missing value imputation
+- Outlier detection & treatment
+- Feature engineering (technical indicators)
+- Train-test split (80-20)
 
-Features: Open, High, Low, Close, Volume
+### 3. Model Training
+- **Prophet:** Additive time series model with seasonality
+- **SARIMAX:** (2,1,2)x(1,1,1,12) with trend component
+- **LightGBM:** 500 estimators, max depth 7, learning rate 0.05
 
-2. Data Preprocessing
-Missing value imputation
+### 4. Evaluation Metrics
+- MAPE (Mean Absolute Percentage Error)
+- RMSE (Root Mean Squared Error)
+- MAE (Mean Absolute Error)
+- R² Score
 
-Outlier detection & treatment
+---
 
-Feature engineering (technical indicators)
+## 📈 Key Insights
 
-Train-test split (80-20)
+🔹 **Prophet outperforms** with 11.46% MAPE  
+🔹 **Gold showed high volatility** in 2024-2025 period  
+🔹 **Model predicts correction** (-19% over 60 days)  
+🔹 **RSI indicates neutral** momentum (64.08)  
+🔹 **MACD signals bullish** short-term trend  
 
-3. Model Training
-Prophet: Additive time series model with seasonality
+---
 
-SARIMAX: (2,1,2)x(1,1,1,12) with trend component
+## 🛠️ Technologies Used
 
-LightGBM: 500 estimators, max depth 7, learning rate 0.05
+**Languages:** Python 3.8+
 
-4. Evaluation Metrics
-MAPE (Mean Absolute Percentage Error)
+**Libraries:**
+- Data: `pandas`, `numpy`, `yfinance`
+- ML/AI: `prophet`, `statsmodels`, `lightgbm`, `scikit-learn`
+- Visualization: `matplotlib`, `seaborn`, `plotly`
 
-RMSE (Root Mean Squared Error)
+**Tools:** Jupyter Notebook, Git, GitHub
 
-MAE (Mean Absolute Error)
+---
 
-R² Score
+## 📝 Future Enhancements
 
-📈 Key Insights
-🔹 Prophet outperforms with 11.46% MAPE
-🔹 Gold showed high volatility in 2024-2025 period
-🔹 Model predicts correction (-19% over 60 days)
-🔹 RSI indicates neutral momentum (64.08)
-🔹 MACD signals bullish short-term trend
+- [ ] Add LSTM/GRU deep learning models
+- [ ] Implement real-time prediction API
+- [ ] Include sentiment analysis from news
+- [ ] Deploy as web application (Streamlit)
+- [ ] Add cryptocurrency correlation analysis
 
-🛠️ Technologies Used
-Languages: Python 3.8+
+---
 
-Libraries:
+## 👤 Author
 
-Data: pandas, numpy, yfinance
-
-ML/AI: prophet, statsmodels, lightgbm, scikit-learn
-
-Visualization: matplotlib, seaborn, plotly
-
-Tools: Jupyter Notebook, Git, GitHub
-
-📝 Future Enhancements
- Add LSTM/GRU deep learning models
-
- Implement real-time prediction API
-
- Include sentiment analysis from news
-
- Deploy as web application (Streamlit)
-
- Add cryptocurrency correlation analysis
-
- 👤 Author
-Varun Tehlan
+**Varun Tehlan**  
 Business/Data Analyst | AI/ML Enthusiast
 
-📧 Email: varun.tehlan@gmail.com
-💼 LinkedIn: www.linkedin.com/in/varuntehlan
+📧 Email: varun.tehlan@gmail.com  
+💼 LinkedIn: [linkedin.com/in/varuntehlan](https://www.linkedin.com/in/varuntehlan)
 
-📜 License
+---
+
+## 📜 License
+
 This project is licensed under the MIT License.
 
-🙏 Acknowledgments
-Meta's Prophet library for time series forecasting
+---
 
-Yahoo Finance for real-time market data
+## 🙏 Acknowledgments
 
-Scikit-learn community for ML tools
+- Meta's Prophet library for time series forecasting
+- Yahoo Finance for real-time market data
+- Scikit-learn community for ML tools
 
-⭐ Star this repository if you find it helpful!
+---
+
+**⭐ Star this repository if you find it helpful!**
