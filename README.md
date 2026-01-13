@@ -64,12 +64,17 @@ jupyter notebook Gold_Price_Forecasting_AI_Project.ipynb
 
 ---
 ## 📁 Project Structure
+
+```bash
 gold-price-forecasting-ai/
 │
 ├── Gold_Price_Forecasting_AI_Project.ipynb  # Main analysis notebook
 ├── requirements.txt                          # Python dependencies
 ├── README.md                                 # Project documentation
 └── .gitignore                                # Git ignore rules
+```
+
+---
 
 🔬 Methodology
 1. Data Collection
@@ -155,6 +160,3 @@ Yahoo Finance for real-time market data
 Scikit-learn community for ML tools
 
 ⭐ Star this repository if you find it helpful!
-
-
-
