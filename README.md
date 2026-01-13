@@ -60,8 +60,10 @@ pip install -r requirements.txt
 
 # Launch Jupyter
 jupyter notebook Gold_Price_Forecasting_AI_Project.ipynb
+```
 
-📁 Project Structure
+---
+## 📁 Project Structure
 gold-price-forecasting-ai/
 │
 ├── Gold_Price_Forecasting_AI_Project.ipynb  # Main analysis notebook
