@@ -34,9 +34,9 @@ This project implements and compares **three advanced AI/ML models** for forecas
 
 | Model | MAPE | RMSE | MAE | R² Score |
 |-------|------|------|-----|----------|
-| **Prophet** | **11.46%** | $560.79 | $428.47 | -0.039 |
-| SARIMAX | 20.88% | $944.70 | $772.71 | -2.004 |
-| LightGBM | 20.89% | $941.26 | $772.32 | -1.983 |
+| **Prophet** | **11.53%** | $560.57 | $429.06 | -0.066 |
+| SARIMAX | 19.09% | $881.70 | $707.79 | -1.672 |
+| LightGBM | 21.46% | $945.15 | $786.10 | -2.071 |
 
 **Winner: Prophet** - Best balance of accuracy and reliability
 
