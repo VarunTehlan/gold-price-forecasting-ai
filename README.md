@@ -44,6 +44,30 @@ This project implements and compares **three advanced AI/ML models** for forecas
 
 ## 🚀 Quick Start
 
+### 🌐 Interactive Dashboard
+
+**NEW:** Explore the project through an interactive Streamlit dashboard!
+
+```bash
+# Navigate to dashboard folder
+cd gold_dashboard
+
+# Install Streamlit dependencies
+pip install streamlit plotly
+
+# Run the dashboard
+streamlit run app.py
+
+The dashboard opens at http://localhost:8501 with:
+
+📊 Overview with key metrics
+
+🤖 Model performance comparison
+
+🔮 60-day forecast visualization
+
+💡 Trading insights & recommendations
+
 ### Prerequisites
 - Python 3.8+
 - Jupyter Notebook
