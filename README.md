@@ -57,16 +57,14 @@ pip install streamlit plotly
 
 # Run the dashboard
 streamlit run app.py
+```
 
-The dashboard opens at http://localhost:8501 with:
+The dashboard opens at `http://localhost:8501` with:
+- 📊 Overview with key metrics
+- 🤖 Model performance comparison
+- 🔮 60-day forecast visualization
+- 💡 Trading insights & recommendations
 
-📊 Overview with key metrics
-
-🤖 Model performance comparison
-
-🔮 60-day forecast visualization
-
-💡 Trading insights & recommendations
 
 ### Prerequisites
 - Python 3.8+
